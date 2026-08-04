@@ -1,2 +1,3 @@
 # websites!!
 I'm supposed to be a web developer now, so it makes sense to have somewhere to host my websites...
+I guess I will link the official domains of the websites on my CV, instead of my github, as my writing here isnt particularly professional
