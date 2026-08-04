@@ -1,0 +1,22 @@
+footer {
+    y: 90%;
+    height: 10%;
+    background-color: #5aaf58;
+    display: flex;
+}
+
+footer h1 {
+    font-size: 1vw;
+    display: flex;
+    color: white;
+}
+footer a {
+    margin: 0 1vw;
+}
+footer .left {
+    margin-right: auto;
+}
+footer .right {
+    margin-left: auto;
+    margin-right: 0;
+}

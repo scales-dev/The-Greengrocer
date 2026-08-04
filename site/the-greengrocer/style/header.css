@@ -1,0 +1,36 @@
+header {
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background-color: #e6e6e6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    padding: 0.5vh 1em;
+}
+
+header img {
+    width: 15vw;
+}
+
+.left,
+.right {
+    display: flex;
+    gap: 3vw;
+}
+
+header a {
+    padding: 1em;
+    color: #032f0b;
+}
+
+header .button {
+    border-radius: 3px;
+    color: white;
+    background-color: #032f0b;
+}

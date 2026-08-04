@@ -1,0 +1,79 @@
+.summary {
+    text-align: center;
+
+    h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        line-height: 0.95;
+        font-size: 4vh;
+        margin: 0;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.5vh;
+        font-weight: normal;
+    }
+    h3 {
+        margin: 0;
+        font-weight: 550;
+        text-transform: uppercase;
+        font-size: 1.5vh;
+    }
+    p {
+        margin: 1vh;
+        font-size: 1.2vh;
+        line-height: 1.5vh;
+    }
+
+    .grid {
+        margin: 2vh;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        div {
+            position: relative;
+            flex: 0 0 15%;
+            padding: 0 3vw;
+
+            img {
+                width: 30%;
+            }
+
+            &:not(:last-child)::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 15%;
+                height: 70%;
+                width: 1px;
+                background: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @media(max-width: 1000px) {
+            display: block;
+
+            h3 {
+                font-size: 2.5vw;
+            }
+            p {
+                font-size: 2vh;
+                line-height: 3vh;
+            }
+
+            div {
+                padding: 5px;
+
+                img {
+                    max-width: 10%;
+                }
+
+                &:not(:last-child)::after {
+                    background: rgba(0, 0, 0, 0);
+                }
+            }
+        }
+    }
+}
