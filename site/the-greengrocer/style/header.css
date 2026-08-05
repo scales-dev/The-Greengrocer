@@ -1,6 +1,6 @@
 header {
     font-family: "Inter", sans-serif;
-    font-size: max(1.5vh, 1.3vw);
+    font-size: max(0.8vh, 0.8vw);
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -11,7 +11,7 @@ header {
     align-items: center;
     text-align: center;
 
-    padding: 1vh 1vw;
+    padding: 1vh 1vw 1vh 0;
 
     img {
         display: block;
@@ -21,7 +21,6 @@ header {
     .left,
     .right {
         display: flex;
-        gap: 0 1vw;
     }
 
     .right a {
