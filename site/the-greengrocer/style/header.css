@@ -6,13 +6,12 @@ header {
     text-transform: uppercase;
     background-color: #e6e6e6;
 
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 
-    padding: 0 1vw;
+    padding: 1vh 1vw;
 
     img {
         display: block;
@@ -22,7 +21,7 @@ header {
     .left,
     .right {
         display: flex;
-        gap: 0 3vw;
+        gap: 0 1vw;
     }
 
     .right a {
