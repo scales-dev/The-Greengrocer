@@ -54,23 +54,9 @@
         }
 
         @media(max-width: 1000px) {
-            display: block;
-
-            h3 {
-                font-size: 2.5vw;
-            }
-            p {
-                padding: 0.5vw 10vw;
-                font-size: 2vh;
-                line-height: 3vh;
-            }
-
             div {
-                padding: 1vh;
-
-                img {
-                    max-width: 10%;
-                }
+                position: relative;
+                flex: 1 0 40%;
 
                 &:not(:last-child)::after {
                     background: rgba(0, 0, 0, 0);
