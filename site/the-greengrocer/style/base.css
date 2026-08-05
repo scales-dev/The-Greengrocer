@@ -15,6 +15,7 @@ button:hover {
 html {
     overflow: auto;
     scrollbar-width: none; /* Firefox */
+    background-color: aliceblue;
 }
 
 html::-webkit-scrollbar {

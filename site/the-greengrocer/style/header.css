@@ -4,7 +4,7 @@ header {
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    background-color: #e6e6e6;
+    background-color: aliceblue;
 
     display: flex;
     justify-content: space-between;
@@ -24,14 +24,14 @@ header {
     }
 
     .right a {
-        color: #032f0b;
+        color: black;
         padding: max(1vw, 1vh);
     }
 
     .right .button {
         border-radius: 3px;
         border: none;
-        color: white;
+        color: aliceblue;
         background-color: #032f0b;
     }
 }

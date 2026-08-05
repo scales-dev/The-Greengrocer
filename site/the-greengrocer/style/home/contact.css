@@ -1,6 +1,6 @@
 .contact {
     background-color: #142f07;
-    color: white;
+    color: aliceblue;
 
     display: grid;
     grid-template-columns: 40% 60%;
@@ -30,8 +30,9 @@
             background-image: url("../../images/home/grapes.svg");
             background-repeat: no-repeat;
             background-size: contain;
+            filter: invert(0.6);
 
-            opacity: 0.5;
+            opacity: 0.3;
             transform: translate(20%, -20%);
         }
 
