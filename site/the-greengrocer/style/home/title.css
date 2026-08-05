@@ -23,7 +23,7 @@
         margin: 0;
 
         font-family: "Cormorant Garamond", serif;
-        font-size: 5vw;
+        font-size: max(5vw, 5vh);
         font-weight: 500;
         line-height: 0.9;
 
@@ -36,12 +36,15 @@
 
     h2 {
         font-family: "Montserrat", sans-serif;
-        font-size: 1.5vw;
+        font-size: max(1.5vw, 1.5vh);
         font-weight: 300;
         letter-spacing: 0.2vw;
         line-height: 1.5;
 
-        max-width: 30%;
+        max-width: 60%;
+        @media(min-width: 1000px) {
+            max-width: 30%;
+        }
     }
 
     button {
@@ -50,7 +53,7 @@
         padding: 1vw 2vw;
         border-radius: 0.5vh;
         border-width: 0.2vh;
-        font-size: 1vw;
+        font-size: max(1vw, 1vh);
         margin-top: 1vh;
         margin-right: 0.5vw;
         backdrop-filter: blur(2px);

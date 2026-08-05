@@ -1,6 +1,6 @@
 header {
     font-family: "Inter", sans-serif;
-    font-size: 1vw;
+    font-size: max(0.7vh, 1vw);
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -14,7 +14,7 @@ header {
     padding: 0.5vh 1em;
 
     img {
-        width: 15vw;
+        width: max(15vw, 15vh);
     }
 
     .left,
