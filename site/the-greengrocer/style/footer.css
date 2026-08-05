@@ -3,7 +3,7 @@ footer {
     color: white;
 
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 3fr;
+    grid-template-columns: 1.5fr 1fr 1fr 4fr;
     gap: 3vw;
 
     padding: 1vh 3vw;
@@ -44,7 +44,7 @@ footer {
     }
 
     .black-image {
-        width: max(20vh, 15vw);
+        width: max(25vh, 15vw);
         filter: invert(1);
         align-content: center;
     }
