@@ -50,7 +50,6 @@ footer {
     }
     .socials {
         filter: invert(1);
-        margin-top: -1.2vh;
         gap: 2vw;
         flex-direction: row;
         justify-content: center;

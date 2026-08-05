@@ -1,34 +1,36 @@
 header {
     font-family: "Inter", sans-serif;
-    font-size: max(0.7vh, 1vw);
+    font-size: max(1.5vh, 1.3vw);
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     background-color: #e6e6e6;
+
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 
-    padding: 0.5vh 1em;
+    padding: 0 1vw;
 
     img {
+        display: block;
         width: max(15vw, 15vh);
     }
 
     .left,
     .right {
         display: flex;
-        gap: 3vw;
+        gap: 0 3vw;
     }
 
-    a {
-        padding: 1vw;
+    .right a {
         color: #032f0b;
+        padding: max(1vw, 1vh);
     }
 
-    .button {
+    .right .button {
         border-radius: 3px;
         border: none;
         color: white;

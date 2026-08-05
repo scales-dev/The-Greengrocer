@@ -50,12 +50,12 @@
     button {
         color: white;
         text-transform: uppercase;
-        padding: 1vw 2vw;
+        padding: max(1vw, 1vh) max(2vw, 2vh);
         border-radius: 0.5vh;
         border-width: 0.2vh;
         font-size: max(1vw, 1vh);
-        margin-top: 1vh;
-        margin-right: 0.5vw;
+        margin-top: max(1vw, 1vh);
+        margin-right: max(1vw, 1vh);
         backdrop-filter: blur(2px);
         border-style: solid;
 
