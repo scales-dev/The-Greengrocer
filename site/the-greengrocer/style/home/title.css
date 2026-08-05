@@ -8,22 +8,22 @@
     padding-left: 10%;
     padding-block: 5%;
 
-    backdrop-filter: brightness(0.8);
+    backdrop-filter: brightness(1);
     &::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.35);
+        background: rgba(0, 0, 0, 0.4);
         z-index: -1;
     }
 
 
     h1 {
-        text-shadow: #051f03 5px 5px 5px;
+        text-shadow: #051f03 1vh 1vh 1vh;
         margin: 0;
 
         font-family: "Cormorant Garamond", serif;
-        font-size: clamp(3rem, 5vw, 5.5rem);
+        font-size: 5vw;
         font-weight: 500;
         line-height: 0.9;
 
@@ -47,17 +47,18 @@
     button {
         color: white;
         text-transform: uppercase;
-        padding: 1rem 2rem;
-        border-radius: 0.3rem;
-        font-size: 1rem;
-        margin-top: 1rem;
-        margin-right: 0.5rem;
+        padding: 1vw 2vw;
+        border-radius: 0.5vh;
+        border-width: 0.2vh;
+        font-size: 1vw;
+        margin-top: 1vh;
+        margin-right: 0.5vw;
         backdrop-filter: blur(2px);
         border-style: solid;
 
         &.a {
             border: none;
-            box-shadow: rgb(55 96 55) 0 0 5px;
+            box-shadow: rgb(55 96 55) 0 0 1vh;
             background-color: rgb(55 96 55 / 0.67);
         }
         &.b {

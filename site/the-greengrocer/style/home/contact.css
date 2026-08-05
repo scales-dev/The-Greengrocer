@@ -42,31 +42,34 @@
 
         h1 {
             font-family: "Cormorant Garamond", serif;
-            font-size: clamp(3rem, 5vw, 5.5rem);
+            font-size: 5vw;
             font-weight: 500;
             line-height: 0.9;
         }
 
         h2 {
             text-transform: uppercase;
+            font-size: 3vh;
         }
 
         .paragraph {
             max-width: 70%;
+            font-size: 1.5vw;
         }
 
         .contact-detail {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1vw;
 
             img {
-                width: 40px;
-                height: 40px;
+                width: 5vh;
+                height: 5vh;
             }
 
             p {
                 margin: 0;
+                font-size: 1.8vh;
             }
         }
     }
@@ -81,7 +84,7 @@
         }
 
         .contact-content {
-            padding: 2rem;
+            padding: 2vw;
         }
     }
 
@@ -89,11 +92,13 @@
         color: white;
         border-style: solid;
         border-color: aliceblue;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px); /* in case i ever put a real image behind this */
         background-color: rgb(0 0 0 / 0.2);
-        border-radius: 3px;
+        border-width: 0.2vh;
+        border-radius: 0.5vh;
         margin: 2vh 0;
         padding: 2vh 6vh;
         text-transform: uppercase;
+        font-size: max(2vh, 1.5vw);
     }
 }
