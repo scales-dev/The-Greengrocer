@@ -1,0 +1,60 @@
+.faq {
+    margin: 2vh 5vw;
+
+    h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: max(5vw, 5vh);
+        font-weight: normal;
+        text-align: center;
+
+        margin: 0;
+        padding: 2vh;
+    }
+
+    details {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 2.5vh 0;
+
+        &:first-of-type {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: max(1.5vw, 1.5vh);
+            font-weight: 300;
+            letter-spacing: 0.2vw;
+            line-height: 1.2;
+
+            color: #142f07;
+
+            &::after {
+                content: "+";
+
+                text-transform: uppercase;
+                font-size: max(2vh, 1vw);
+                font-weight: normal;
+            }
+        }
+
+        &[open] summary::after {
+            content: "−";
+        }
+
+        p {
+            margin: 2vh 0 0;
+
+            font-size: 1.2vh;
+            line-height: 1.5vh;
+
+            color: #142f07;
+        }
+    }
+}

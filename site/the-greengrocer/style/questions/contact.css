@@ -1,0 +1,38 @@
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+    margin-top: 4vh;
+
+    input,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        background: transparent;
+
+        border: none;
+        border-bottom: 0.15vh solid rgba(255,255,255,0.7);
+        color: aliceblue;
+
+        padding: 1.5vh 0;
+
+        font-size: max(1.5vh, 1vw);
+
+        outline: none;
+
+        &::placeholder {
+            color: rgba(255,255,255,0.7);
+            text-transform: uppercase;
+        }
+    }
+
+    textarea {
+        min-height: 10vh;
+        resize: vertical;
+    }
+
+    button {
+        max-width: 30%;
+    }
+}

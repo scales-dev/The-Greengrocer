@@ -6,6 +6,10 @@ a {
     color: inherit;
     text-decoration: none;
 }
+a .clickable {
+    color: #00b4f6;
+    text-decoration: underline;
+}
 button:hover {
     cursor: pointer;
 }
