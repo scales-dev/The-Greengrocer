@@ -4,6 +4,7 @@ const navButton = document.getElementById("mobile-nav");
 const navBarOptions = document.getElementsByClassName("nav-bar");
 
 navButton.addEventListener("click", () => {
+    // typescript and java have better looking for loops, Im sure js has too, but autocomplete didnt tell me so
     for (let i = 0; i < navBarOptions.length; i++) {
         navBarOptions[i].classList.toggle("clicked-nav-bar");
     }
