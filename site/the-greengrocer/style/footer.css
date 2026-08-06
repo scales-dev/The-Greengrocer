@@ -1,6 +1,6 @@
 footer {
     background-color: #142f07;
-    color: white;
+    color: aliceblue;
 
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 4fr;

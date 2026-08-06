@@ -48,7 +48,7 @@
     }
 
     button {
-        color: white;
+        color: aliceblue;
         text-transform: uppercase;
         font-size: max(1.5vh, 1vw);
         padding: max(1vw, 1vh) max(2vw, 2vh);
