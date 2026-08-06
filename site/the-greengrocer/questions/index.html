@@ -11,23 +11,31 @@
     <title>The Greengrocer by My Exotic Fruit</title>
     <link rel="icon" href="../images/logo.png">
 
-    <link rel="stylesheet" href="../style/base.css">
-    <link rel="stylesheet" href="../style/header.css">
-    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../global-style/base.css">
+    <link rel="stylesheet" href="../global-style/header.css">
+    <link rel="stylesheet" href="../global-style/footer.css">
 
-    <link rel="stylesheet" href="../style/home/title.css">
-    <link rel="stylesheet" href="../style/home/contact.css">
-    <link rel="stylesheet" href="../style/home/instagram.css">
+    <link rel="stylesheet" href="../home/title.css">
+    <link rel="stylesheet" href="../home/contact.css">
+    <link rel="stylesheet" href="../home/instagram.css">
 
-    <link rel="stylesheet" href="../style/questions/title.css">
-    <link rel="stylesheet" href="../style/questions/faq.css">
-    <link rel="stylesheet" href="../style/questions/contact.css">
+    <link rel="stylesheet" href="title.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!--
+    Source - https://stackoverflow.com/a/4056764
+    Posted by Beau Smith, modified by community. See post 'Timeline' for change history
+    Retrieved 2026-06-26, License - CC BY-SA 4.0
+    stops apple from FORCING phone numbers to be blue
+    -->
+    <meta name="format-detection" content="telephone=no">
 </head>
 <body>
 <main>
     <header>
         <div class="left">
-            <a href="../">
+            <a href="..">
                 <img src="../images/officialgreengrocer.png" alt="The Greengrocer">
             </a>
         </div>
@@ -38,9 +46,11 @@
             </button>
 
             <div class="nav-bar">
-                <a href="../">Home</a>
-                <a href="https://myexoticfruit.com/blog" target="_blank">Blogs</a>
+                <a href="..">Home</a>
+                <a href="">Our Produce</a>
+                <a href="https://myexoticfruit.com/japanese-selection" target="_blank">Japanese Fruits</a>
                 <a href="">Events</a>
+                <a href="https://myexoticfruit.com/blog" target="_blank">Blogs</a>
                 <a href="">Questions</a>
                 <!-- i dont know why i didnt just use a button here -->
                 <a class="button" href="https://myexoticfruit.com/shop/" target="_blank">Shop Online</a>
@@ -51,37 +61,35 @@
     <main>
         <section class="title">
             <h1>
-                Any Questions?
-                <br><i class = "reimagined">Feel Free To Ask!</i>
+                Any questions?
+                <br><i class = "reimagined">feel free to ask!</i>
             </h1>
             <h2>We try to respond as soon as possible,
                 our team works from 10am-5pm monday-friday to respond you your emails!</h2>
         </section>
 
-        <section class="questions">
-            <div class="faq">
-                <h2>Frequently Asked Questions</h2>
+        <section class="faq" id ="faq">
+            <h2>Frequently asked questions</h2>
 
-                <details>
-                    <summary>Pulvinar vivamus fringilla lacus nec metus bibendum egestas</summary>
-                    <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
-                </details>
+            <details>
+                <summary>Pulvinar vivamus fringilla lacus nec metus bibendum egestas</summary>
+                <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
+            </details>
 
-                <details>
-                    <summary>In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor</summary>
-                    <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
-                </details>
+            <details>
+                <summary>In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor</summary>
+                <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
+            </details>
 
-                <details>
-                    <summary>Quisque faucibus ex sapien vitae pellentesque sem placerat</summary>
-                    <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
-                </details>
+            <details>
+                <summary>Quisque faucibus ex sapien vitae pellentesque sem placerat</summary>
+                <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
+            </details>
 
-                <details>
-                    <summary>Lorem ipsum dolor sit amet consectetur adipiscing elit</summary>
-                    <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
-                </details>
-            </div>
+            <details>
+                <summary>Lorem ipsum dolor sit amet consectetur adipiscing elit</summary>
+                <p>Lorem Ipsum Generator Quickly and easily generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</p>
+            </details>
         </section>
 
         <section class="contact">
@@ -93,7 +101,7 @@
             </iframe>
 
             <div class="contact-content">
-                <h2>Contact Us</h2>
+                <h2 id ="contact-us">Contact Us</h2>
                 <h1>We are always
                     <br>happy to chat</h1>
 
@@ -101,21 +109,17 @@
                 <p></p>
 
                 <div class="contact-detail">
-                    <!-- todo: phone icon -->
-                    <img src="../images/map-point.svg" alt="phone">
-                    <!-- todo: make link ig? i think apple does anyway -->
-                    <p>
+                    <img src="../images/questions/phone.svg" alt="phone" class="invert-image">
+                    <a href="tel:+4401277413773">
                         +44 01277 413773
-                    </p>
+                    </a>
                 </div>
 
                 <div class="contact-detail">
-                    <!-- todo: mail icon -->
-                    <img src="../images/clock-4pm.svg" alt="email">
-                    <!-- todo: make link -->
-                    <p>
+                    <img src="../images/questions/mail.svg" alt="email" class="invert-image">
+                    <a href="mailto:thegreengrocer@myexoticfruit.com">
                         thegreengrocer@myexoticfruit.com
-                    </p>
+                    </a>
                 </div>
 
                 <form id="contact-form">
@@ -143,7 +147,7 @@
     <footer>
         <div>
             <!-- link to homepage -->
-            <a href="">
+            <a href="../">
                 <img class="black-image" src="../images/officialgreengrocer.png" alt="The Greengrocer">
             </a>
             <ul class="socials">
@@ -168,16 +172,16 @@
             <h1>Shop</h1>
             <ul>
                 <li><a href="">Produce</a></li>
-                <li><a href="">Find Us</a></li>
-                <li><a href="">Online Shop</a></li>
+                <li><a href="https://www.google.com/maps?cid=353630396139914046" target="_blank">Find Us</a></li>
+                <li><a href="https://myexoticfruit.com/shop/" target="_blank">Online Shop</a></li>
             </ul>
         </div>
         <div>
             <h1>Company</h1>
             <ul>
                 <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">FAQ</a></li>
+                <li><a href="../questions/#faq">FAQ</a></li>
+                <li><a href="../questions#contact-us">Contact Us</a></li>
             </ul>
         </div>
         <div>

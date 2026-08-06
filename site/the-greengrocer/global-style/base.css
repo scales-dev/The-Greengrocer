@@ -25,3 +25,7 @@ html {
 html::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Edge */
 }
+
+.invert-image {
+    filter: invert(1);
+}

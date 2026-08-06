@@ -30,7 +30,7 @@
             width: 70vh;
             height: 70vh;
 
-            background-image: url("../../images/home/grapes.svg");
+            background-image: url("../images/home/grapes.svg");
             background-repeat: no-repeat;
             background-size: contain;
             filter: invert(0.6);
@@ -76,7 +76,7 @@
                 width: max(4vh, 2vw);
             }
 
-            p {
+            p, a {
                 max-width: 100%;
                 margin: 0.5vh 0;
             }
