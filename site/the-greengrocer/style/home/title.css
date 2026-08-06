@@ -39,7 +39,7 @@
         font-size: max(1.5vw, 1.5vh);
         font-weight: 300;
         letter-spacing: 0.2vw;
-        line-height: 1.5;
+        line-height: 1.2;
 
         max-width: 60%;
         @media(min-width: 1000px) {
@@ -50,10 +50,10 @@
     button {
         color: white;
         text-transform: uppercase;
+        font-size: max(1.5vh, 1vw);
         padding: max(1vw, 1vh) max(2vw, 2vh);
         border-radius: 0.5vh;
         border-width: 0.2vh;
-        font-size: max(1vw, 1vh);
         margin-top: max(1vw, 1vh);
         margin-right: max(1vw, 1vh);
         backdrop-filter: blur(2px);

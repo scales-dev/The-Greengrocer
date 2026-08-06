@@ -52,12 +52,17 @@
 
         h2 {
             text-transform: uppercase;
-            font-size: max(2vw, 3vh);
+            font-size: max(2vh, 1vw);
+            font-weight: normal;
         }
 
         .paragraph {
             max-width: 70%;
-            font-size: max(1vw, 1.7vh);
+            font-family: "Montserrat", sans-serif;
+            font-size: max(1.5vw, 1.5vh);
+            font-weight: 300;
+            letter-spacing: 0.2vw;
+            line-height: 1.2;
         }
 
         .contact-detail {
@@ -71,8 +76,9 @@
 
             p {
                 max-width: 100%;
-                margin: 0;
-                font-size: max(1.5vh, 0.8vw);
+                margin: 0.5vh 0;
+                font-size: 1.2vh;
+                line-height: 1.5vh;
             }
         }
     }

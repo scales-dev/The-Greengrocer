@@ -48,7 +48,7 @@ footer {
     .black-image {
         align-self: center;
         display: flex;
-        width: 30vw;
+        width: 25vw;
         filter: invert(1);
         align-content: center;
     }
@@ -57,6 +57,8 @@ footer {
         gap: 2vw;
         flex-direction: row;
         justify-content: center;
+
+        padding-top: 1vh;
 
         img {
             display: flex;

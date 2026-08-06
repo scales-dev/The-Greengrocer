@@ -4,9 +4,10 @@
 
     h1 {
         font-family: "Cormorant Garamond", serif;
+        font-size: max(5vw, 5vh);
         font-weight: 500;
-        line-height: 0.95;
-        font-size: 4vh;
+        line-height: 0.9;
+
         margin: 0;
         padding: 2vh;
     }
