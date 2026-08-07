@@ -25,8 +25,8 @@
     }
     p {
         padding: 0;
-        font-size: 1.2vh;
-        line-height: 1.5vh;
+        font-size: max(1.2vh, 0.9vw);
+        line-height: max(1.5vh, 1.2vw);
     }
 
     .grid {
