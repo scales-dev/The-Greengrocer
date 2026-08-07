@@ -33,8 +33,6 @@
             letter-spacing: 0.2vw;
             line-height: 1.2;
 
-            color: #142f07;
-
             &::after {
                 content: "+";
 
@@ -53,8 +51,6 @@
 
             font-size: 1.2vh;
             line-height: 1.5vh;
-
-            color: #142f07;
         }
     }
 }

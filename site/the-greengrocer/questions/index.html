@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="title.css">
     <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="gallery.css">
 
     <!--
     Source - https://stackoverflow.com/a/4056764
@@ -46,13 +47,13 @@
 
             <div class="nav-bar">
                 <a href="..">Home</a>
-                <a href="">Our Produce</a>
-                <a href="https://myexoticfruit.com/japanese-selection" target="_blank">Japanese Fruits</a>
-                <a href="">Events</a>
+                <a href="../produce">Our produce</a>
+                <a href="https://myexoticfruit.com/japanese-selection" target="_blank">Japanese fruits</a>
+                <a href="../events">Events</a>
                 <a href="https://myexoticfruit.com/blog" target="_blank">Blogs</a>
-                <a href="">Questions</a>
+                <a href="../questions">Questions</a>
                 <!-- i dont know why i didnt just use a button here -->
-                <a class="button" href="https://myexoticfruit.com/shop/" target="_blank">Shop Online</a>
+                <a class="button" href="https://myexoticfruit.com/shop/" target="_blank">Shop online</a>
             </div>
         </div>
     </header>
@@ -64,7 +65,7 @@
                 <br><i class = "reimagined">feel free to ask!</i>
             </h1>
             <h2>We try to respond as soon as possible,
-                our team works from 10am-5pm monday-friday to respond you your emails!</h2>
+                our team works from 10am–5pm monday-friday to respond you your emails!</h2>
         </section>
 
         <section class="faq" id ="faq">
@@ -134,6 +135,31 @@
                 <p class="form-error" data-fs-error></p>
             </div>
         </section>
+
+        <section class="gallery">
+            <h1 id="about-us">About us</h1>
+
+            <div class="gallery-track">
+                <!-- todo: probably placeholder images -->
+                <img src="../images/questions/garlic.jpg" alt="">
+                <img src="../images/questions/shiitake.jpg" alt="">
+                <img src="../images/questions/onion.jpg" alt="">
+                <img src="../images/questions/mushroom.jpg" alt="">
+                <img src="../images/questions/caulis.jpg" alt="">
+                <img src="../images/home/titlebackground.jpg" alt="">
+
+                <img src="../images/questions/garlic.jpg" alt="">
+                <img src="../images/questions/shiitake.jpg" alt="">
+                <img src="../images/questions/onion.jpg" alt="">
+                <img src="../images/questions/mushroom.jpg" alt="">
+                <img src="../images/questions/caulis.jpg" alt="">
+                <img src="../images/home/titlebackground.jpg" alt="">
+            </div>
+
+            <a href="https://mailchi.mp/myexoticfruit/the-greengrocer-newsletter", target="_blank">
+                <button>Sign up to our newsletter!</button>
+            </a>
+        </section>
     </main>
 
     <footer>
@@ -172,9 +198,9 @@
         <div>
             <h1>Company</h1>
             <ul>
-                <li><a href="">About Us</a></li>
+                <li><a href="./#about-us">About us</a></li>
                 <li><a href="../questions/#faq">FAQ</a></li>
-                <li><a href="../questions#contact-us">Contact Us</a></li>
+                <li><a href="../questions#contact-us">Contact us</a></li>
                 <li><a href="events">Events</a></li>
             </ul>
         </div>
@@ -184,8 +210,8 @@
                 <li>
                     <img src="../images/map-point.svg" alt="map">
                     <a href="https://www.google.com/maps?cid=353630396139914046" target="_blank">
-                        Goatsmoor Lane CM4 9RS
-                        <br>Unit 20 Oaklands Farm Estate
+                        Goatsmoor Lane, CM4 9RS
+                        <br>Unit 20, Oaklands Farm Estate
                     </a>
                 </li>
                 <li>
@@ -197,7 +223,7 @@
         </div>
     </footer>
 
-    <script src="../header.js"></script>
+    <script src="../global-style/header.js"></script>
     <script src="https://unpkg.com/@formspree/ajax@1"></script>
 
     <script>
