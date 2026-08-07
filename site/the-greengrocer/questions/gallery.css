@@ -1,4 +1,6 @@
 .gallery {
+    overflow: hidden;
+
     .gallery-track {
         display: flex;
         width: max-content;
