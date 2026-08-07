@@ -13,3 +13,5 @@ I learnt a LOT of css, before this all I really knew was you can type like ".cla
 Now I would say I am a lot more confident on it, however getting things to be where I want them is HARD.
 I think I am getting a lot better at HTML, although there really isn't much to it.
 Javascript has always come easy to me, it was the first language I learnt, so I enjoy the rare occasions I get to use it.
+
+In future I need to really rethink my css structuring, this is a mess.

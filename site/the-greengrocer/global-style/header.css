@@ -3,7 +3,7 @@ header {
     position: relative;
 
     font-family: "Inter", sans-serif;
-    font-size: max(1.3vh, 0.8vw);
+    font-size: max(1.5vh, 0.8vw);
     font-weight: 500;
     letter-spacing: max(0.3vh, 0.2vw);
     text-transform: uppercase;
@@ -49,12 +49,12 @@ header {
 
         a {
             text-align: center;
-            padding: 1.5vh 5vw;
+            padding: 2vh 5vw;
         }
     }
 
     /* desktop stuff is simpler, so it makes sense to do it seperately */
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
 
         #mobile-nav {
             display: none;
