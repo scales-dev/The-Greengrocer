@@ -20,8 +20,8 @@ button {
 button:hover {
     transform: translate(0, -0.5vh);
 }
-a .clickable {
-    color: #00b4f6;
+.clickable {
+    color: #12a18c;
     text-decoration: underline;
 }
 button:hover {
