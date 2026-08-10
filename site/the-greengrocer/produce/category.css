@@ -1,0 +1,6 @@
+.gallery {
+    .track-parent {
+        padding-inline: 5vw;
+        overflow: hidden;
+    }
+}

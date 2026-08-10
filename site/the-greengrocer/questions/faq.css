@@ -51,6 +51,8 @@
         p {
             margin: 2vh 0 0;
 
+            max-width: 95%;
+
             font-size: max(1.2vh, 0.9vw);
             line-height: max(1.5vh, 1.2vw);
         }
