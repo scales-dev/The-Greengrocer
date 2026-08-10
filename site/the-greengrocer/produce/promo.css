@@ -31,14 +31,18 @@
 
     .promo-grid {
         color: aliceblue;
-        display: flex;
+
+        @media(min-width: 1000px) {
+            display: flex;
+        }
         justify-content: center;
         gap: 1vw;
 
         .box {
+            margin: 2vh 0;
             outline: black solid 1px;
             text-align: left;
-            padding: 5vh 5vw 5vh 2vw;
+            padding: 5vh 5vw 5vh max(2vw, 2vh);
 
             background-size: cover;
             background-position: center;
