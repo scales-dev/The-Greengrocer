@@ -35,15 +35,21 @@
         @media(min-width: 1000px) {
             display: flex;
         }
+
         justify-content: center;
         gap: 1vw;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
 
         .box {
+            flex: 1;
+            box-sizing: border-box;
+
             margin: 2vh 0;
-            outline: black solid 1px;
             text-align: left;
             padding: 5vh 5vw 5vh max(2vw, 2vh);
 
+            outline: black solid 1px;
             background-size: cover;
             background-position: center;
             backdrop-filter: brightness(1);
@@ -51,7 +57,7 @@
                 content: "";
                 position: absolute;
                 inset: 0;
-                background: rgba(0, 0, 0, 0.4);
+                background: rgba(0, 0, 0, 0.6);
                 z-index: -1;
             }
 
@@ -77,5 +83,13 @@
 
     .events {
         background-image: url("../images/questions/mushroom.jpg");
+    }
+
+    .instagram {
+        background-image: url("../images/events/instagram-background.png");
+    }
+
+    .tiktok {
+        background-image: url("../images/events/tiktok-background.png");
     }
 }

@@ -1,0 +1,19 @@
+.promo {
+    .events-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1vw;
+
+        .box {
+            width: 100%;
+
+            border: 2px solid black;
+        }
+
+        .box img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
