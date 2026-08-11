@@ -14,7 +14,7 @@
             width: min(20vh, 20vw);
             height: min(20vh, 20vw);
             border-radius: 10%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
