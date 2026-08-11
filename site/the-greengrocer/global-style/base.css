@@ -61,7 +61,7 @@ iframe {
 
 .clean-button button {
     @media(min-width: 1000px) {
-        width: 30%;
+        width: 25%;
     }
 
     border: none;
