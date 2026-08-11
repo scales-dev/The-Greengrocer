@@ -51,6 +51,15 @@ iframe {
     border: none;
 }
 
+.center-div {
+    justify-content: space-around;
+    align-items: center;
+
+    @media(min-width: 1000px) {
+        display: flex;
+    }
+}
+
 .clean-button button {
     display: block;
     margin: 3vh auto;
