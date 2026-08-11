@@ -17,7 +17,7 @@ a:hover {
 button {
     transition: 0.3s;
 }
-button:hover {
+button:hover:not(.eapps-instagram-feed-posts-slider-nav) {
     transform: translate(0, -0.5vh);
     filter: invert(0.1);
 }

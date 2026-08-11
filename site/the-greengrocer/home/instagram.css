@@ -1,3 +1,7 @@
 .instagram {
     margin: 1vw;
+
+    div {
+        border-radius: max(1vh, 1vw);
+    }
 }
