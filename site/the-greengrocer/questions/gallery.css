@@ -4,17 +4,11 @@
     .gallery-track {
         display: flex;
         width: max-content;
-        animation: scroll 20s linear infinite;
-
-        gap: 2vw;
-        padding: 2vh 0;
-        margin: 0 -6vw;
+        animation: scroll 60s linear infinite;
 
         img {
-            width: min(20vh, 20vw);
             height: min(20vh, 20vw);
-            border-radius: 10%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
 
@@ -60,7 +54,7 @@
 }
 
 @keyframes scroll {
-    100% {
+    to {
         transform: translateX(-25%);
     }
 }
