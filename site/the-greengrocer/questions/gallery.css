@@ -15,6 +15,11 @@
             height: min(20vh, 20vw);
             border-radius: 10%;
             object-fit: cover;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.2);
         }
     }
 
