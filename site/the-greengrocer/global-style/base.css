@@ -34,6 +34,10 @@ button:hover {
     font-weight: bold;
 }
 
+.align-left {
+    object-position: left;
+}
+
 /* https://community.wappler.io/t/hide-scroll-bar/64874 */
 /* For modern browsers <- i didnt write this, but i love that it implies firefox is more "modern" then edge */
 html {
