@@ -12,8 +12,18 @@
 
             font-family: "Cormorant Garamond", serif;
             font-size: max(5vw, 5vh);
-            font-weight: 500;
             line-height: 0.9;
+
+            margin: 0;
+
+            text-align: left;
+        }
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: max(1.5vw, 1.5vh);
+            font-weight: 300;
+            letter-spacing: 0.2vw;
+            line-height: 1.2;
 
             text-align: left;
         }
@@ -26,8 +36,8 @@
             line-height: 1.2;
         }
 
-        div {
-            width: 15vw;
+        div, img {
+            max-width: 15vw;
         }
     }
 }
