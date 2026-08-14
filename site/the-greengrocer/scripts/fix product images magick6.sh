@@ -1,9 +1,10 @@
 #!/bin/zsh
+
 INPUT_DIR="$1"
 
 cd "$INPUT_DIR" || {
-  echo "Folder does NOT exist."
-  exit 1
+    echo "Folder does NOT exist."
+    exit 1
 }
 
 for file in *.jpg(N) *.jpeg(N) *.png(N) *.webp(N); do
@@ -14,8 +15,8 @@ for file in *.jpg(N) *.jpeg(N) *.png(N) *.webp(N); do
     temp="/tmp/${file:t}.webp"
     trimmed="/tmp/${file:t}-trimmed.webp"
 
-    # get top-left pixel
-    alpha=$(magick "$file" \
+    # get top-left pixel alpha
+    alpha=$(convert "$file" \
         -alpha on \
         -format "%[fx:1-a]" \
         -crop 1x1+0+0 \
@@ -23,14 +24,20 @@ for file in *.jpg(N) *.jpeg(N) *.png(N) *.webp(N); do
 
     if [[ "$alpha" == "1" ]]; then
         echo "already transparent - skipping background removal"
-        cp "$file" "$temp"
+
+        # Convert to WebP rather than just renaming/copying the file.
+        convert "$file" \
+            -alpha on \
+            -define webp:lossless=true \
+            "WEBP:$temp"
     else
-        color=$(magick "$file" \
+        # get top-left pixel color
+        color=$(convert "$file" \
             -format "%[pixel:p{0,0}]" \
             info:)
 
-        # remove background https://stackoverflow.com/questions/9155377/set-transparent-background-using-imagemagick-and-commandline-prompt
-        magick "$file" \
+        # remove background
+        convert "$file" \
             -alpha off \
             -bordercolor "$color" \
             -border 1 \
@@ -54,7 +61,7 @@ for file in *.jpg(N) *.jpeg(N) *.png(N) *.webp(N); do
     fi
 
     # find actual image bounds
-    geo=$(magick "$temp" \
+    geo=$(convert "$temp" \
         -alpha on \
         -channel A \
         -threshold 50% \
@@ -64,7 +71,7 @@ for file in *.jpg(N) *.jpeg(N) *.png(N) *.webp(N); do
         info:)
 
     # trim the image
-    magick "$temp" \
+    convert "$temp" \
         -alpha on \
         -crop "$geo" \
         +repage \
@@ -72,19 +79,19 @@ for file in *.jpg(N) *.jpeg(N) *.png(N) *.webp(N); do
         "$trimmed"
 
     # resize to fit within 256x256
-    magick "$trimmed" \
+    convert "$trimmed" \
         -resize "256x256>" \
         "$trimmed"
 
     # centre on 256x256 transparent canvas
-    magick \
+    convert \
         -size 256x256 xc:none \
         "$trimmed" \
         -gravity center \
         -composite \
         -define webp:lossless=false \
         -quality 85 \
-        "$temp"
+        "WEBP:$temp"
 
     # replace original
     mv "$temp" "${base}.webp"
