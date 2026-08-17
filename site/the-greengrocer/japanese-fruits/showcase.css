@@ -1,43 +1,51 @@
 .showcase {
-    padding: 5vh 0;
+    padding: 2vh 0;
     .showcase-content {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        text-align: center;
+        text-align: left;
 
         h1 {
-            text-shadow: #051f03 1vh 1vh 1vh;
-
             font-family: "Cormorant Garamond", serif;
-            font-size: max(5vw, 5vh);
+            font-size: max(2.5vw, 2.5vh);
+            font-weight: 500;
             line-height: 0.9;
-
             margin: 0;
-
-            text-align: left;
         }
         h2 {
+            text-transform: uppercase;
+            font-size: max(1vh, 1vw);
+            font-weight: normal;
+        }
+
+        p {
             font-family: "Montserrat", sans-serif;
             font-size: max(1.5vw, 1.5vh);
             font-weight: 300;
             letter-spacing: 0.2vw;
             line-height: 1.2;
-
-            text-align: left;
         }
 
         a {
-            font-family: "Montserrat", sans-serif;
-            font-size: max(1.5vw, 1.5vh);
-            font-weight: 300;
-            letter-spacing: 0.2vw;
-            line-height: 1.2;
+            font-size: max(1vw, 1vh);
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .japanese-fruit-product {
+            text-align: center;
         }
 
         div, img {
-            max-width: 15vw;
+            max-width: 25vw;
+        }
+
+        img {
+            width: 15vw;
+            height: 12vw;
+            object-fit: cover;
         }
     }
 }

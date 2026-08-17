@@ -22,8 +22,12 @@ button:hover:not(.eapps-instagram-feed-posts-slider-nav) {
     filter: invert(0.1);
 }
 .clickable {
-    color: #12a18c;
+    color: #142f07;
     text-decoration: underline;
+    text-underline-offset: 0.5vh;
+}
+.clickable:hover {
+    cursor: pointer;
 }
 button:hover {
     cursor: pointer;
@@ -52,7 +56,7 @@ html::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Edge */
 }
 
-.invert-image {
+.invert {
     filter: invert(1);
 }
 
