@@ -219,10 +219,16 @@
                 </div>
 
                 <form action="mailto:thegreengrocer@myexoticfruit.com" method="post" enctype="text/plain">
-                    <input type="text" name="name" placeholder="Name*" required>
+                    <label>
+                        <input type="text" name="name" placeholder="Name*" required>
+                    </label>
                     <!--<input type="email" name="email" placeholder="Email" required>-->
-                    <input type="tel" name="phone" placeholder="Phone">
-                    <textarea name="message" placeholder="Message*" required></textarea>
+                    <label>
+                        <input type="tel" name="phone" placeholder="Phone">
+                    </label>
+                    <label>
+                        <textarea name="message" placeholder="Message*" required></textarea>
+                    </label>
                     <button type="submit" data-fs-submit-btn>Send Message</button>
                 </form>
             </div>

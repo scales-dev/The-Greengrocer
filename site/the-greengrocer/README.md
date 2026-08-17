@@ -7,11 +7,11 @@ Web dev was growing on me with the previous website, but my enjoyment is quickly
 I hope I can redesign their current main 2 websites, that would be a fun project.
 
 This website has been a fun learning experience. 
-In future I will keep the typeface uniform by keeping h1, h2, h3 and a/p fonts the same throughout the project.
-I don't think Im too keen on the layout of the css, so much so that I might clean it up later.
-I learnt a LOT of css, before this all I really knew was you can type like ".class { color: white }".
+In future, I will keep the typeface uniform by keeping h1, h2, h3 and a/p fonts the same throughout the project.
+I don't think I’m too keen on the layout of the CSS, so much so that I might clean it up later.
+I learnt a LOT of CSS, before this all I really knew was you can type like ".class { color: white }".
 Now I would say I am a lot more confident on it, however getting things to be where I want them is HARD.
 I think I am getting a lot better at HTML, although there really isn't much to it.
-Javascript has always come easy to me, it was the first language I learnt, so I enjoy the rare occasions I get to use it.
+JavaScript has always come easy to me, it was the first language I learnt, so I enjoy the rare occasions I get to use it.
 
-In future I need to really rethink my css structuring, this is a mess.
+In future, I need to really rethink my CSS structuring, this is a mess.

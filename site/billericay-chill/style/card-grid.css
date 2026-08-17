@@ -45,7 +45,7 @@ h3 {
     transform: translate(0, -0.5vh);
     box-shadow: 0 0 2vh rgba(8, 44, 104, 1);
 }
-/* card image is a seperate thing so i can filter images seperate from the background */
+/* card image is a separate thing so i can filter images separate from the background */
 .card-image {
     padding: 1vh;
     background-color: #e9f3fc;
