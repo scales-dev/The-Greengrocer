@@ -1,9 +1,0 @@
-/* not really worthy of its own file but wtv */
-body {
-    font-family: sans-serif;
-    margin: 0; /* there is likely a better way to get the header to be flush with the top */
-    overflow-x: hidden;
-}
-a {
-    text-decoration: none;
-}
