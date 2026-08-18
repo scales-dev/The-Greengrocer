@@ -1,19 +1,127 @@
 .promo {
-    .events-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 100%));
-        gap: 3vw;
+    .events-carousel {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
 
-        .box {
-            width: 100%;
+    .events-slider {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
 
-            border: 2px solid black;
-        }
+    .events-track {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
 
-        .box img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
+        height: 100%;
+
+        transition: transform 0.5s ease;
+    }
+
+    .event-slide {
+        position: relative;
+        flex: 0 0 auto;
+
+        height: min(90vh, 100%);
+
+        transition:
+                transform 0.5s ease,
+                filter 0.5s ease,
+                opacity 0.5s ease;
+    }
+
+    .event-slide:not(.active) {
+        transform: scale(0.7);
+        filter: brightness(0.4) blur(3px);
+        opacity: 0.8;
+    }
+
+    .event-slide.active {
+        transform: scale(1);
+        filter: none;
+        opacity: 1;
+    }
+
+    .event-slide img {
+        display: block;
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+
+
+    .events-arrow {
+        position: absolute;
+        z-index: 100;
+
+        top: 50%;
+
+        width: 32px;
+        height: 64px;
+
+        padding: 0;
+        border: none;
+
+        background: rgba(240, 248, 255, 0.8);
+        color: #142f07;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        transform: translateY(-50%);
+
+        transition:
+                background 0.2s ease,
+                box-shadow 0.2s ease;
+    }
+
+    .events-arrow::before {
+        content: "";
+
+        width: 10px;
+        height: 10px;
+
+        border-top: 2px solid currentColor;
+        border-right: 2px solid currentColor;
+
+        transition: transform 0.2s ease;
+    }
+
+    .events-prev {
+        left: 0;
+        border-radius: 0 32px 32px 0;
+    }
+
+    .events-prev::before {
+        transform: rotate(-135deg);
+    }
+
+    .events-next {
+        right: 0;
+        border-radius: 32px 0 0 32px;
+    }
+
+    .events-next::before {
+        transform: rotate(45deg);
+    }
+
+    .events-arrow:hover {
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .events-prev:hover::before {
+        transform: translateX(-2px) rotate(-135deg);
+    }
+
+    .events-next:hover::before {
+        transform: translateX(2px) rotate(45deg);
     }
 }

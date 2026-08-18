@@ -1,4 +1,3 @@
-<!-- todo: more fruits, more categories -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,14 +38,12 @@
             </button>
 
             <div class="nav-bar">
-                <a href="..">Home</a>
-                <a href="../produce">Our produce</a>
-                <a href="../japanese-fruits">Japanese fruits</a>
-                <a href="../events" class="selected-header">Events</a>
-                <a href="https://myexoticfruit.com/blog" target="_blank">Blog</a>
+                <a href="../">Home</a>
                 <a href="../questions">Questions</a>
-                <!-- i dont know why i didnt just use a button here -->
-                <a class="button" href="https://myexoticfruit.com/shop/" target="_blank">Shop online</a>
+                <a href="../events" class="selected-header">Events</a>
+                <a href="../japanese-fruits">Japanese fruits</a>
+                <!-- i dont know why i didnt just use a "button" here, if you cant tell, i am still learning html, i cant remember the last time i relied this much on autocomplete -->
+                <a href="../produce" class="button">Our produce</a>
             </div>
         </div>
     </header>
@@ -54,84 +51,64 @@
     <main>
         <section class="title">
             <h1>
-                Events,
-                <br><i class = "reimagined">fun for all!</i>
+                Something,
+                <br><i class = "reimagined">worth celebrating!</i>
             </h1>
             <h2>
-                Our events are fun for the whole family!
-                We celebrate fruits coming in season,
-                come celebrate with us.
+                Our events offer free tasting and drinks
+                of our favourite fruits to celebrate them
+                coming into season, come celebrate with us.
             </h2>
         </section>
 
-        <section class="summary">
-            <div class="grid">
-                <div>
-                    <img src="../images/events/apple.svg" alt="global">
-                    <h3>Exceptional produce</h3>
-                    <p>
-                        Our events are built around the finest and most unusual produce we can find.
-                        From rare Japanese varieties to exotic fruits from around the world,
-                        we bring something memorable to every occasion.
-                    </p>
-                </div>
-
-                <div>
-                    <img src="../images/events/magnifying-glass.svg" alt="hand picked">
-                    <h3>Something to discover</h3>
-                    <p>
-                        There is always something unexpected to discover.
-                        Taste unfamiliar fruits, learn about where they come from and explore
-                        flavours and varieties you may never have encountered before.
-                    </p>
-                </div>
-
-                <div>
-                    <img src="../images/events/headshot.svg" alt="personal">
-                    <h3>Meet the team</h3>
-                    <p>
-                        Our events are an opportunity to meet the people behind
-                        The Greengrocer and share our passion for exceptional produce.
-                        We are always happy to talk fruit,
-                        answer questions and share our knowledge.
-                    </p>
-                </div>
-
-                <div>
-                    <img src="../images/events/lightbulb.svg" alt="shop">
-                    <h3>A memorable experience</h3>
-                    <p>
-                        More than simply serving exceptional fruit,
-                        we aim to create an experience our guests will remember.
-                        From the produce itself to the way it is presented
-                        and enjoyed, every detail is considered.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- todo: this is rather uninspired, maybe make a nav bar with the old events, with the upcoming event picked by default -->
         <section class="promo">
-            <div class="events-grid">
-                <div class="box">
-                    <img src="../images/events/summerfruits.jpg" alt="greengrocer">
+            <h1>Our events</h1>
+
+            <div class="events-carousel">
+
+                <div class="events-slider">
+                    <div class="events-track">
+                        <div class="event-slide" data-date="2026-06-05">
+                            <img src="../images/events/mangoevent.jpg" alt="Mango event June 5th">
+
+                            <button class="events-arrow events-prev" aria-label="Previous event"></button>
+                            <button class="events-arrow events-next" aria-label="Next event"></button>
+                        </div>
+
+                        <div class="event-slide" data-date="2026-07-31">
+                            <img src="../images/events/paradisefruits.jpg" alt="Paradise fruits event June 5th">
+
+                            <button class="events-arrow events-prev" aria-label="Previous event"></button>
+                            <button class="events-arrow events-next" aria-label="Next event"></button>
+                        </div>
+
+                        <div class="event-slide" data-date="2026-08-14">
+                            <img src="../images/events/summerfruits.jpg" alt="Summer fruits event June 5th">
+
+                            <button class="events-arrow events-prev" aria-label="Previous event"></button>
+                            <button class="events-arrow events-next" aria-label="Next event"></button>
+                        </div>
+
+                        <div class="event-slide" data-date="2026-09-11">
+                            <img src="../images/events/soursop%20event.jpg" alt="Soursop event September 11th">
+
+                            <button class="events-arrow events-prev" aria-label="Previous event"></button>
+                            <button class="events-arrow events-next" aria-label="Next event"></button>
+                        </div>
+
+                        <div class="event-slide" data-date="2026-10-09">
+                            <img src="../images/events/apple%20and%20pear%20event.jpg" alt="Apple and pear event October 9th">
+
+                            <button class="events-arrow events-prev" aria-label="Previous event"></button>
+                            <button class="events-arrow events-next" aria-label="Next event"></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../images/events/paradisefruits.jpg" alt="greengrocer">
-                </div>
-                <div class="box">
-                    <img src="../images/events/mangoevent.jpg" alt="greengrocer">
-                </div>
-                <div class="box">
-                    <img src="../images/events/durianevent.jpg" alt="greengrocer">
-                </div>
+
             </div>
         </section>
 
         <section class="promo events-grid">
-            <h2>Our socials</h2>
-            <h1>Keep up to date with us</h1>
-
             <div class="promo-grid">
                 <div class="box tiktok">
                     <h1>Tiktok</h1>
@@ -228,5 +205,6 @@
     </footer>
 
     <script src="../global-style/header.js"></script>
+    <script src="index.js"></script>
 </main>
 </body>

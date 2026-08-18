@@ -41,6 +41,8 @@
 
             img {
                 width: 20%;
+                display: block;
+                margin: 0 auto;
             }
 
             &:not(:last-child)::after {
