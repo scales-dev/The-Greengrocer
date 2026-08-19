@@ -1,10 +1,11 @@
 .showcase {
-    padding: 2vh 0;
+    padding: 2vh 2vw;
+
     .showcase-content {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
 
         h1 {
@@ -46,6 +47,24 @@
             width: 15vw;
             height: 12vw;
             object-fit: cover;
+        }
+
+        @media (max-width: 1000px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2vw;
+
+            > :first-child {
+                grid-column: 1 / -1;
+            }
+            div, img {
+                max-width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }

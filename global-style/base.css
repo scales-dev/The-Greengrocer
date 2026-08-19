@@ -21,7 +21,7 @@ button:hover:not(.eapps-instagram-feed-posts-slider-nav, .events-arrow) {
 .clickable {
     color: #142f07;
     text-decoration: underline;
-    text-underline-offset: 0.5vh;
+    text-underline-offset: 0.3vh;
 }
 .clickable:hover {
     cursor: pointer;
