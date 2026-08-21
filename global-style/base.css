@@ -30,11 +30,6 @@ button:hover {
     cursor: pointer;
 }
 
-.selected-header {
-    color: #142f07;
-    font-weight: bold;
-}
-
 .align-left {
     object-position: left;
 }

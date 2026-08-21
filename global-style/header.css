@@ -55,7 +55,6 @@ header {
 
     /* desktop stuff is simpler, so it makes sense to do it seperately */
     @media (min-width: 1200px) {
-
         #mobile-nav {
             display: none;
         }
@@ -63,22 +62,18 @@ header {
         .nav-bar {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
 
             position: static;
             background: none;
             box-shadow: none;
 
             a {
-                padding: 1vw 1.5vw;
+                padding: 0.8vw 1.3vw;
             }
 
-            .button {
-                color: aliceblue;
-                background: #032f0b;
-                margin: 0.5rem;
-                border-radius: 4px;
+            .selected-header {
                 text-align: center;
+                font-weight: bold;
             }
         }
     }

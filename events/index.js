@@ -2,6 +2,7 @@ const carousel = document.querySelector('.events-carousel');
 
 const track = carousel.querySelector('.events-track');
 const slides = carousel.querySelectorAll('.event-slide');
+const eventsTitle = document.querySelector('.promo > h1');
 
 let current = 0;
 
@@ -50,6 +51,15 @@ function updateCarousel() {
     });
 
 
+    // change heading
+    if (current < nextEvent) {
+        eventsTitle.textContent = 'Our previous events';
+    }
+    else if (current >= nextEvent) {
+        eventsTitle.textContent = 'Our upcoming events';
+    }
+
+
     // centre the active slide
     const currentSlide = slides[current];
 
@@ -74,8 +84,6 @@ carousel.querySelectorAll('.events-prev').forEach(button => {
         }
     });
 });
-
-
 carousel.querySelectorAll('.events-next').forEach(button => {
     button.addEventListener('click', () => {
         if (current < slides.length - 1) {

@@ -82,7 +82,7 @@
     }
 
     .events {
-        background-image: url("../images/produce/events-background.jpg");
+        background-image: url("../images/events/events banner.png");
     }
 
     .instagram {
@@ -91,5 +91,9 @@
 
     .tiktok {
         background-image: url("../images/events/tiktok-background.png");
+    }
+
+    .online-shop-bg {
+        background-image: url("../images/home/online shop.png");
     }
 }

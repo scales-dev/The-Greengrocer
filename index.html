@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>The Greengrocer by My Exotic Fruit | Greengrocer in Ingatestone</title>
-    <meta name="description" content="The Greengrocer by My Exotic Fruit is a local greengrocer in Ingatestone, Essex, specialising in exceptional exotic and organic produce, including premium Japanese fruit.">
+    <meta name="description" content="The Greengrocer by My Exotic Fruit is a local greengrocer in Stock, Essex, specialising in exceptional exotic and organic produce, including premium Japanese fruit.">
     <link rel="icon" href="images/logo.png">
 
     <link rel="stylesheet" href="global-style/base.css">
@@ -17,8 +17,12 @@
     <link rel="stylesheet" href="home/instagram.css">
     <link rel="stylesheet" href="home/contact.css">
 
-    <meta property="og:title" content="The Greengrocer | Exotic Fruit & Local Greengrocer in Ingatestone">
-    <meta property="og:description" content="Exceptional exotic and organic produce, carefully selected and available from our greengrocer in Ingatestone, Essex.">
+    <link rel="stylesheet" href="home/contact.css">
+
+    <link rel="stylesheet" href="produce/promo.css">
+
+    <meta property="og:title" content="The Greengrocer | Exotic Fruit & Local Greengrocer in Stock">
+    <meta property="og:description" content="Exceptional exotic and organic produce, carefully selected and available from our greengrocer in Stock, Essex.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thegreengrocerbymef.com">
     <meta property="og:image" content="images/logo.png">
@@ -71,32 +75,44 @@
 
             <div class="nav-bar">
                 <a href="" class="selected-header">Home</a>
-                <a href="questions">Questions</a>
                 <a href="events">Events</a>
+                <a href="japanese-fruits">Exotic fruits</a>
                 <a href="japanese-fruits">Japanese fruits</a>
-                <!-- i dont know why i didnt just use a "button" here, if you cant tell, i am still learning html, i cant remember the last time i relied this much on autocomplete -->
-                <a href="produce" class="button">Our produce</a>
+                <a href="japanese-fruits">Organic</a>
+                <a href="japanese-fruits">Chocolate</a>
+                <a href="questions">Questions</a>
             </div>
         </div>
     </header>
 
     <main>
         <section class="title">
-            <h1>
-                Your local
-                <br>greengrocer,
-                <br><i class = "reimagined">reimagined.</i>
-            </h1>
-            <h2>
-                The finest selection of the highest quality exotic and organic produce,
-                all in a comfy local shop.
-            </h2>
-            <a href="produce">
-                <button class="a">Our produce</button>
-            </a>
-            <a href="https://myexoticfruit.com/shop/" target="_blank">
-                <button class="b">Our online shop</button>
-            </a>
+            <!-- some stackoverflow guy said capitalizing the P fixes autoplay, and i think it actually worked, i didnt think it would so i didnt save the link. -->
+            <video autoPlay muted disablepictureinpicture playsinline loop poster="images/produce/greengrocerinterior.jpg">
+                <source src="images/home/greengrocer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="title-content">
+                <h1>
+                    Your local
+                    <br>greengrocer,
+                    <br><i class="reimagined">reimagined.</i>
+                </h1>
+
+                <h2>
+                    The finest selection of the highest quality exotic and organic produce,
+                    all in a friendly local shop.
+                </h2>
+
+                <a href="produce">
+                    <button class="a">Events</button>
+                </a>
+
+                <a href="https://myexoticfruit.com/shop/" target="_blank">
+                    <button class="b">Questions</button>
+                </a>
+            </div>
         </section>
         <section class="summary">
             <h2>Quality you can taste</h2>
@@ -142,18 +158,14 @@
         </section>
 
         <section class="contact">
-            <!-- some stackoverflow guy said capitalizing the P fixes autoplay, and i think it actually worked, i didnt think it would so i didnt save the link. -->
-            <video autoPlay muted disablepictureinpicture playsinline loop poster="images/produce/greengrocerinterior.jpg" class="side-image">
-                <source src="images/home/greengrocer.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
+            <img class="side-image" src="images/home/mural.jpg">
 
             <div class="contact-content">
                 <h2>Visit our shop</h2>
                 <h1>Come and experience<br><i>the difference</i></h1>
 
                 <p class="paragraph">
-                    Visit The Greengrocer in Ingatestone, Essex, to discover produce
+                    Visit The Greengrocer in Stock, Essex, to discover produce
                     packed with flavour. From everyday essentials and traditional favourites
                     to rare exotic fruit and seasonal finds, we hope you'll rediscover
                     something old and experience something new.
@@ -183,6 +195,64 @@
             </div>
         </section>
 
+        <section class="promo events-grid">
+            <h1>Too far to travel?</h1>
+            <div class="promo-grid">
+                <div class="box online-shop-bg">
+                    <h1>Our online shop</h1>
+                    <p>
+                        We also sell a wide variety of exotic fruits online,
+                        with many fruits you cannot find in the greengrocer!
+                        Enter a whole new world of flavour, with our online shop.
+                    </p>
+                    <a href="https://myexoticfruit.com/" target="_blank">
+                        <button>Here</button>
+                    </a>
+                </div>
+                <div class="box blog">
+                    <h1>Keep up to date with us</h1>
+                    <p>
+                        Discover the world of exotic fruit through
+                        our latest stories, guides and inspiration.
+                        Learn about unique varieties, where they come from,
+                        and the best ways to enjoy them.
+                    </p>
+                    <a href="https://www.instagram.com/thegreengrocerbymef/" target="_blank">
+                        <button>Here</button>
+                    </a>
+                </div>
+            </div>
+
+            <a class="clean-button" href="https://mailchi.mp/myexoticfruit/the-greengrocer-newsletter" target="_blank">
+                <button>Sign up to our newsletter!</button>
+            </a>
+        </section>
+
+        <section class="contact">
+            <div class="contact-content">
+                <h2>Events</h2>
+                <h1>Fun for the whole family!</h1>
+
+                <p class="paragraph">
+                    Our events feature food and drinks,
+                    a fun game or challenge,
+                    as well as discounts on our shop items,
+                    all free to come down and enjoy!
+                </p>
+
+                <a href="events" target="_blank">
+                    <button>
+                        Read more
+                    </button>
+                </a>
+
+                <a href="https://mailchi.mp/myexoticfruit/the-greengrocer-newsletter" target="_blank">
+                    <button>Get notified</button>
+                </a>
+            </div>
+            <img class="side-image" src="images/events/events%20banner.png">
+        </section>
+
         <section class="instagram">
             <!-- Elfsight Instagram Feed | The Greengrocer Website Widget -->
             <script src="https://elfsightcdn.com/platform.js" async></script>
@@ -192,8 +262,7 @@
 
     <footer>
         <div>
-            <!-- link to homepage -->
-            <a href="">
+            <a href="/">
                 <img class="black-image" src="images/greengrocer-logo.svg" alt="The Greengrocer">
             </a>
             <ul class="socials">
@@ -217,19 +286,19 @@
         <div>
             <h1>Shop</h1>
             <ul>
-                <li><a href="produce">Produce</a></li>
-                <li><a href="japanese-fruits">Japanese Fruits</a></li>
-                <li><a href="https://www.google.com/maps?cid=353630396139914046" target="_blank">Find Us</a></li>
-                <li><a href="https://myexoticfruit.com/shop/" target="_blank">Online Shop</a></li>
+                <li><a href="exotic-fruits">Exotic fruits</a></li>
+                <li><a href="japanese-fruits">Japanese fruits</a></li>
+                <li><a href="organic">Organic produce</a></li>
+                <li><a href="chocolate">Chocolate</a></li>
             </ul>
         </div>
         <div>
             <h1>Company</h1>
             <ul>
-                <li><a href="questions#about-us">About us</a></li>
-                <li><a href="questions#contact-us">Contact us</a></li>
-                <li><a href="questions#faq">FAQ</a></li>
                 <li><a href="events">Events</a></li>
+                <li><a href="questions#faq">FAQ</a></li>
+                <li><a href="questions#contact-us">Contact us</a></li>
+                <li><a href="https://www.google.com/maps?cid=353630396139914046" target="_blank">Find Us</a></li>
             </ul>
         </div>
         <div>
