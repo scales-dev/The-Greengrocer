@@ -1,6 +1,19 @@
 .gallery {
     overflow: hidden;
 
+    .track-parent {
+        overflow: hidden;
+
+        mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                black 8%,
+                black 92%,
+                transparent 100%
+        );
+    }
+
+
     .gallery-track {
         display: flex;
         width: max-content;
@@ -13,7 +26,6 @@
         img {
             width: min(20vh, 20vw);
             height: min(20vh, 20vw);
-            border-radius: 10%;
             object-fit: cover;
             transition: 0.3s;
         }

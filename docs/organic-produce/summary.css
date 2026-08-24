@@ -1,0 +1,14 @@
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .sourcing-content {
+        padding: 2vw;
+    }
+
+    > img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
