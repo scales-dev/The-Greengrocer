@@ -9,3 +9,10 @@ navButton.addEventListener("click", () => {
         navBarOptions[i].classList.toggle("clicked-nav-bar");
     }
 });
+
+// when resizing the window we close the nav bar, in case they full screened while the nav bar was open.
+window.addEventListener("resize", () => {
+    for (let i = 0; i < navBarOptions.length; i++) {
+        navBarOptions[i].classList.remove("clicked-nav-bar");
+    }
+});
