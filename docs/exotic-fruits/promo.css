@@ -100,4 +100,12 @@
     .pione-grape {
         background-image: url("../images/japanese-fruits/pione grapes.webp");
     }
+
+    .exotic-fruits-button-bg {
+        background-image: url("../images/exotic-fruits/exotic-fruits-background.jpg");
+    }
+
+    .japanese-fruits-button-bg {
+        background-image: url("../images/japanese-fruits/japanese fruits.webp");
+    }
 }
