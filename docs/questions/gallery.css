@@ -19,15 +19,14 @@
         width: max-content;
         animation: scroll 60s linear infinite;
 
-        gap: 2vw;
         padding: 2vh 0;
-        margin: 0 -6vw;
 
         img {
             width: min(20vh, 20vw);
             height: min(20vh, 20vw);
             object-fit: cover;
             transition: 0.3s;
+            z-index: 1;
         }
 
         img:hover {
