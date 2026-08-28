@@ -50,13 +50,14 @@ function updateCarousel() {
                 : 'none';
     });
 
-
-    // change heading
-    if (current < nextEvent) {
-        eventsTitle.textContent = 'Our previous events';
-    }
-    else if (current >= nextEvent) {
-        eventsTitle.textContent = 'Our upcoming events';
+    // very thrown together...
+    if (eventsTitle.textContent.includes("events")) {
+        // change heading
+        if (current < nextEvent) {
+            eventsTitle.textContent = 'Our previous events';
+        } else if (current >= nextEvent) {
+            eventsTitle.textContent = 'Our upcoming events';
+        }
     }
 
 
