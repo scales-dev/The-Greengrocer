@@ -1,12 +1,10 @@
 const form = document.getElementById("contact-form");
 const submitButton = form.querySelector('button[type="submit"]');
-const status = document.getElementById("contact-form-status");
 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     submitButton.disabled = true;
-    status.textContent = "Sending...";
 
     const formData = new FormData(form);
     const payload = Object.fromEntries(formData.entries());
@@ -26,11 +24,11 @@ form.addEventListener("submit", async (event) => {
             throw new Error(result.error || "Failed to send message");
         }
 
-        status.textContent = "Message sent successfully.";
+        alert("Message sent successfully.");
         form.reset();
     } catch (error) {
         console.error(error);
-        status.textContent = error.message || "Unable to send your message. Please try again.";
+        alert(error.message || "Unable to send your message. Please try again.");
     } finally {
         submitButton.disabled = false;
     }

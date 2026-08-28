@@ -38,12 +38,12 @@ export default {
                     from: "onboarding@resend.dev",
                     to: ["jack@myexoticfruit.com"],
                     replyTo: email,
-                    subject: `Website enquiry from ${name}`,
+                    subject: `Message from the greengrocer website by: ${name}`,
                     text:
-                        `Name: ${name}\n` +
-                        `Email: ${email}\n` +
-                        `Phone: ${phone || "Not provided"}\n\n` +
-                        message
+                        `Hello my name is ${name}, you can reply to me at ${email}` +
+                        (phone ? ` or call me at ${phone}` : "") + "!\n\n" +
+                        message +
+                        "\n\nThis message was sent from the greengrocer website: https://thegreengrocerbymef.myexoticfruit.workers.dev/questions/",
                 });
 
                 if (error) {
