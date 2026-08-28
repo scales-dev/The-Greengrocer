@@ -36,7 +36,7 @@ export default {
 
                 const { data, error } = await resend.emails.send({
                     from: "onboarding@resend.dev",
-                    to: ["jack@myexoticfruit.com"],
+                    to: ["thegreengrocer@myexoticfruit.com"],
                     replyTo: email,
                     subject: `Message from the greengrocer website by: ${name}`,
                     text:
