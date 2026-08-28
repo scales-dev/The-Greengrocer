@@ -1,10 +1,20 @@
+import { Resend } from "resend";
+
 export default {
     async fetch(request, env) {
         const url = new URL(request.url);
 
-        if (url.pathname === "/api/send-email" && request.method === "POST") {
+        if (url.pathname === "/api/send-email") {
+
+            if (request.method !== "POST") {
+                return Response.json(
+                    { error: "Method not allowed" },
+                    { status: 405 }
+                );
+            }
+
             try {
-                const { name, email, message } = await request.json();
+                const { name, email, phone, message } = await request.json();
 
                 if (!name || !email || !message) {
                     return Response.json(
@@ -13,26 +23,22 @@ export default {
                     );
                 }
 
-                const response = await fetch(
-                    "https://api.resend.com/emails",
-                    {
-                        method: "POST",
-                        headers: {
-                            "Authorization": `Bearer ${env.RESEND_API_KEY}`,
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify({
-                            from: "thegreengrocer@myexoticfruit.com",
-                            to: "thegreengrocer@myexoticfruit.com",
-                            reply_to: email,
-                            subject: `Website enquiry from ${name}`,
-                            text: `Name: ${name}\nEmail: ${email}\n\n${message}`
-                        })
-                    }
-                );
+                const resend = new Resend(env.RESEND_API_KEY);
 
-                if (!response.ok) {
-                    console.error(await response.text());
+                const { data, error } = await resend.emails.send({
+                    from: "thegreengrocer@myexoticfruit.com",
+                    to: ["jack@myexoticfruit.com"],
+                    replyTo: email,
+                    subject: `Website enquiry from ${name}`,
+                    text:
+                        `Name: ${name}\n` +
+                        `Email: ${email}\n` +
+                        `Phone: ${phone || "Not provided"}\n\n` +
+                        message
+                });
+
+                if (error) {
+                    console.error(error);
 
                     return Response.json(
                         { error: "Failed to send email" },
@@ -40,7 +46,10 @@ export default {
                     );
                 }
 
-                return Response.json({ success: true });
+                return Response.json({
+                    success: true,
+                    id: data?.id
+                });
 
             } catch (error) {
                 console.error(error);

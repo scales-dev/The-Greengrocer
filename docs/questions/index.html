@@ -268,11 +268,11 @@
                     </a>
                 </div>
 
-                <form action="mailto:thegreengrocer@myexoticfruit.com" method="post" enctype="text/plain">
+                <form id="contact-form" action="/api/send-email" method="post">
                     <label>
                         <input type="text" name="name" placeholder="Name*" required>
                     </label>
-                    <!--<input type="email" name="email" placeholder="Email" required>-->
+                    <input type="email" name="email" placeholder="Email" required>
                     <label>
                         <input type="tel" name="phone" placeholder="Phone">
                     </label>
@@ -280,6 +280,7 @@
                         <textarea name="message" placeholder="Message*" required></textarea>
                     </label>
                     <button type="submit" data-fs-submit-btn>Send Message</button>
+                    <p id="contact-form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
@@ -445,5 +446,6 @@
     </footer>
 
     <script src="../global-style/header.js"></script>
+    <script src="./index.js"></script>
 </main>
 </body>
