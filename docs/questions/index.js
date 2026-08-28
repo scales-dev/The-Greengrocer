@@ -30,7 +30,7 @@ form.addEventListener("submit", async (event) => {
         form.reset();
     } catch (error) {
         console.error(error);
-        status.textContent = "Unable to send your message. Please try again.";
+        status.textContent = error.message || "Unable to send your message. Please try again.";
     } finally {
         submitButton.disabled = false;
     }

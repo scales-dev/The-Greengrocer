@@ -23,10 +23,19 @@ export default {
                     );
                 }
 
+                if (!env.RESEND_API_KEY) {
+                    console.error("RESEND_API_KEY is not configured");
+
+                    return Response.json(
+                        { error: "Email service is not configured" },
+                        { status: 500 }
+                    );
+                }
+
                 const resend = new Resend(env.RESEND_API_KEY);
 
                 const { data, error } = await resend.emails.send({
-                    from: "thegreengrocer@myexoticfruit.com",
+                    from: "onboarding@resend.dev",
                     to: ["jack@myexoticfruit.com"],
                     replyTo: email,
                     subject: `Website enquiry from ${name}`,
@@ -41,7 +50,7 @@ export default {
                     console.error(error);
 
                     return Response.json(
-                        { error: "Failed to send email" },
+                        { error: error.message || "Failed to send email" },
                         { status: 500 }
                     );
                 }
@@ -55,8 +64,8 @@ export default {
                 console.error(error);
 
                 return Response.json(
-                    { error: "Invalid request" },
-                    { status: 400 }
+                    { error: "Unable to process request" },
+                    { status: 500 }
                 );
             }
         }
