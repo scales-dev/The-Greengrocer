@@ -109,6 +109,12 @@ iframe {
     }
 }
 
+.banner-text {
+    text-align: center;
+    background-color: #142f07;
+    color: white;
+    padding: 1px 0;
+}
 .banner-image {
     width: 100%;
     object-fit: cover;
