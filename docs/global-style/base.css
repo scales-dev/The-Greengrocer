@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url("../home/fonts/Gill Sans Light.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gill Sans Condensed";
+    src: url("../home/fonts/GillSans Condensed.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gill Sans Light";
+    src: url("../home/fonts/Gill Sans Light.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;

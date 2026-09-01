@@ -78,34 +78,38 @@
     }
 
     .blog {
-        background-image: url("../images/blog-background.png");
+        background-image: url("../home/images/blog-background.png");
     }
 
     .events {
-        background-image: url("../images/events/events banner.png");
+        background-image: url("../events/images/events banner.png");
     }
 
     .instagram {
-        background-image: url("../images/events/instagram-background.png");
+        background-image: url("../events/images/instagram-background.png");
     }
 
     .tiktok {
-        background-image: url("../images/events/tiktok-background.png");
+        background-image: url("../events/images/tiktok-background.png");
     }
 
     .online-shop-bg {
-        background-image: url("../images/home/online shop.png");
+        background-image: url("../home/images/online shop.png");
+    }
+
+    .luxury-gifts-bg {
+        background-image: url("../japanese-fruits/images/luxury gifts bg.png");
     }
 
     .pione-grape {
-        background-image: url("../images/japanese-fruits/pione grapes.webp");
+        background-image: url("../japanese-fruits/images/pione grapes.webp");
     }
 
     .exotic-fruits-button-bg {
-        background-image: url("../images/exotic-fruits/exotic-fruits-background.jpg");
+        background-image: url("images/exotic-fruits-background.jpg");
     }
 
     .japanese-fruits-button-bg {
-        background-image: url("../images/japanese-fruits/japanese fruits.webp");
+        background-image: url("../japanese-fruits/images/japanese fruits.webp");
     }
 }
