@@ -30,7 +30,7 @@
             width: 70vh;
             height: 70vh;
 
-            background-image: url("../images/home/grapes.svg");
+            background-image: url("images/grapes.svg");
             background-repeat: no-repeat;
             background-size: contain;
             filter: invert(0.6);
