@@ -12,14 +12,12 @@
     background-size: cover;
     background-position: center;
 
-    &:not(.no-content) {
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: -1;
-        }
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
     }
 
     video {
