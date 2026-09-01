@@ -2,11 +2,6 @@ header {
     z-index: 1000;
     position: relative;
 
-    font-family: "Inter", sans-serif;
-    font-size: max(1.5vh, 0.8vw);
-    font-weight: 500;
-    letter-spacing: max(0.3vh, 0.2vw);
-    text-transform: uppercase;
     background-color: aliceblue;
 
     display: flex;
@@ -27,7 +22,6 @@ header {
     #mobile-nav {
         background: none;
         border: none;
-        font-size: 3vh;
     }
 
     .nav-bar {

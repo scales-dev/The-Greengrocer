@@ -6,9 +6,6 @@
     grid-template-columns: 40% 60%;
     align-items: stretch;
 
-    font-size: max(2vh, 1vw);
-    font-weight: normal;
-
     .side-image {
         overflow: hidden;
         width: 100%;
@@ -44,27 +41,9 @@
             z-index: 1;
         }
 
-        h1 {
-            font-family: "Cormorant Garamond", serif;
-            font-size: max(5vw, 5vh);
-            font-weight: 500;
-            line-height: 0.9;
-            margin: 0;
-        }
 
-        h2 {
-            text-transform: uppercase;
-            font-size: max(2vh, 1vw);
-            font-weight: normal;
-        }
-
-        .paragraph {
+        p, h3 {
             max-width: 70%;
-            font-family: "Montserrat", sans-serif;
-            font-size: max(1.5vw, 1.5vh);
-            font-weight: 300;
-            letter-spacing: 0.2vw;
-            line-height: 1.2;
         }
 
         .contact-detail {
@@ -107,7 +86,5 @@
         border-radius: 0.5vh;
         margin: 2vh 1vw 2vh 0;
         padding: max(1vh, 1vw) max(2vh, 2vw);
-        text-transform: uppercase;
-        font-size: max(1.5vh, 1vw);
     }
 }

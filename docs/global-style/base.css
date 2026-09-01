@@ -1,13 +1,6 @@
 @font-face {
     font-family: "Gill Sans";
-    src: url("../home/fonts/Gill Sans Light.otf") format("opentype");
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gill Sans Condensed";
-    src: url("../home/fonts/GillSans Condensed.otf") format("opentype");
+    src: url("../home/fonts/Gill Sans.otf") format("opentype");
     font-style: normal;
     font-display: swap;
 }
@@ -20,8 +13,39 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Gill Sans Light", sans-serif;
+    font-size: max(1vw, 1.5vh);
     margin: 0;
+}
+
+h1 {
+    font-family: "Gill Sans Light", sans-serif;
+
+    font-size: max(5vw, 5vh);
+    line-height: 0.9;
+
+    margin: 0;
+}
+
+h2, button, input, textarea, summary, header {
+    font-family: "Gill Sans", sans-serif;
+
+    text-transform: uppercase;
+    font-size: max(2vh, 1vw);
+    font-weight: normal;
+
+    padding: 0;
+}
+
+h3 {
+    font-family: "Gill Sans Light", sans-serif;
+
+    font-size: max(2vw, 2.5vh);
+    font-weight: 300;
+    letter-spacing: 0.2vw;
+    line-height: 1.2;
+
+    margin: 1vh 0;
 }
 
 a {
@@ -83,4 +107,9 @@ iframe {
     @media(max-width: 999px) {
         display: grid;
     }
+}
+
+.banner-image {
+    width: 100%;
+    object-fit: cover;
 }

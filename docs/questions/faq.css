@@ -1,12 +1,8 @@
 .faq {
     margin: 2vh 5vw;
 
-    h2 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: max(5vw, 5vh);
-        font-weight: normal;
+    h1 {
         text-align: center;
-
         margin: 0;
         padding: 2vh;
     }
@@ -28,18 +24,8 @@
             justify-content: space-between;
             align-items: center;
 
-            font-family: "Montserrat", sans-serif;
-            font-size: max(1.5vw, 1.5vh);
-            font-weight: 300;
-            letter-spacing: 0.2vw;
-            line-height: 1.2;
-
             &::after {
                 content: "+";
-
-                text-transform: uppercase;
-                font-size: max(2vh, 1vw);
-                font-weight: normal;
             }
         }
 
@@ -59,13 +45,6 @@
                 width: 100%;
                 height: auto;
                 object-fit: contain;
-            }
-
-            p {
-                margin-top: 2vh;
-
-                font-size: max(1.2vh, 0.9vw);
-                line-height: max(1.5vh, 1.2vw);
             }
         }
     }

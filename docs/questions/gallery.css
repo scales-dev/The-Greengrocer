@@ -33,46 +33,6 @@
             transform: scale(1.2);
         }
     }
-
-    .about-us {
-        background: none;
-
-        padding-inline: 10%;
-
-        h1 {
-            text-shadow: #051f03 1vh 1vh 1vh;
-            margin: 0;
-
-            font-family: "Cormorant Garamond", serif;
-            font-size: max(5vw, 5vh);
-            font-weight: 500;
-            line-height: 0.9;
-
-            text-align: left;
-
-            .reimagined {
-                color: #c2dc9a;
-            }
-        }
-
-        h2:first-child {
-            padding-top: 4vh;
-            padding-bottom: 2vh;
-        }
-        h2 {
-            text-transform: uppercase;
-            font-size: max(2vh, 1vw);
-            font-weight: normal;
-        }
-
-        p {
-            font-family: "Montserrat", sans-serif;
-            font-size: max(1.5vw, 1.5vh);
-            font-weight: 300;
-            letter-spacing: 0.2vw;
-            line-height: 1.2;
-        }
-    }
 }
 
 @keyframes scroll {

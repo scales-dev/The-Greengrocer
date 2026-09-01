@@ -9,18 +9,11 @@ footer {
     padding: 1vh 1vw;
     justify-items: center;
 
-    font-size: max(1vh, 0.8vw);
-
     div {
         display: flex;
         flex-direction: column;
     }
 
-    h1 {
-        font-size: max(1vh, 1vw);
-        text-transform: uppercase;
-        letter-spacing: max(0.3vw, 0.3vh);
-    }
 
     ul {
         list-style: none;
