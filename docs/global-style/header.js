@@ -3,10 +3,19 @@
 const navButton = document.getElementById("mobile-nav");
 const navBarOptions = document.getElementsByClassName("nav-bar");
 
-navButton.addEventListener("click", () => {
-    // typescript and java have better looking for loops, Im sure js has too, but autocomplete didnt tell me so
-    for (let i = 0; i < navBarOptions.length; i++) {
-        navBarOptions[i].classList.toggle("clicked-nav-bar");
+// check if any click is over the nav bar or not
+document.addEventListener("click", (event) => {
+    // when clicking elsewhere, we dont wanna activate
+    if (!navButton.contains(event.target)) {
+        for (let i = 0; i < navBarOptions.length; i++) {
+            navBarOptions[i].classList.remove("clicked-nav-bar");
+        }
+    }
+    else {
+        // typescript and java have better looking for loops, Im sure js has too, but autocomplete didnt tell me so
+        for (let i = 0; i < navBarOptions.length; i++) {
+            navBarOptions[i].classList.toggle("clicked-nav-bar");
+        }
     }
 });
 

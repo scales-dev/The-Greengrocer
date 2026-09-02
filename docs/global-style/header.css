@@ -47,6 +47,10 @@ header {
         }
     }
 
+    .selected-header {
+        font-weight: bold;
+    }
+
     /* desktop stuff is simpler, so it makes sense to do it seperately */
     @media (min-width: 1200px) {
         #mobile-nav {
@@ -63,11 +67,6 @@ header {
 
             a {
                 padding: 0.8vw 1.3vw;
-            }
-
-            .selected-header {
-                text-align: center;
-                font-weight: bold;
             }
         }
     }

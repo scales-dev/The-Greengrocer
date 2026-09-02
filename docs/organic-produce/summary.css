@@ -7,7 +7,7 @@
         padding: 2vw;
     }
 
-    @media(max-width: 1000px) {
+    @media(max-width: 1199px) {
         grid-template-columns: 1fr;
     }
 

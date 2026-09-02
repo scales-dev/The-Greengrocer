@@ -9,7 +9,7 @@
     .promo-grid {
         color: aliceblue;
 
-        @media(min-width: 1000px) {
+        @media(min-width: 1200px) {
             display: flex;
             grid-template-columns: repeat(2, minmax(0, 100%));
         }

@@ -62,12 +62,12 @@
         }
     }
 
-    @media(max-width: 1000px) {
+    @media(max-width: 1199px) {
         display: flex;
         flex-direction: column;
 
         .side-image {
-            height: 35vh;
+            height: 30vh;
             order: -1;
         }
 
