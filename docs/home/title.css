@@ -45,7 +45,6 @@
     }
 
     h3 {
-        max-width: 60%;
         @media(min-width: 1200px) {
             max-width: 30%;
         }

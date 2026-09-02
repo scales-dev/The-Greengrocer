@@ -27,7 +27,7 @@ h1 {
     margin: 0;
 }
 
-h2, button, input, textarea, summary, header {
+h2, button, summary, header {
     font-family: "Gill Sans", sans-serif;
 
     text-transform: uppercase;
@@ -117,7 +117,7 @@ iframe {
     text-align: center;
     background-color: #142f07;
     color: white;
-    padding: 1px 0;
+    padding: 2px 0;
 }
 .banner-image {
     width: 100%;
