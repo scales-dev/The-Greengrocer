@@ -1,4 +1,4 @@
-# [The Greengrocer](https://jackscal.es/the-greengrocer/) by [My Exotic Fruit](https://myexoticfruit.com/)
+# [The Greengrocer](https://thegreengrocerbymef.com) by [My Exotic Fruit](https://myexoticfruit.com/)
 
 My Exotic Fruit owns an in person store, and it seems appropriate to have a website for this. So here it is!
 This is (so far) a better looking website than [Billericay Chill](https://billericaychill.co.uk) because I am making it on work hours, meaning I am being paid to code. 
@@ -15,3 +15,7 @@ I think I am getting a lot better at HTML, although there really isn't much to i
 JavaScript has always come easy to me, it was the first language I learnt, so I enjoy the rare occasions I get to use it.
 
 In future, I need to really rethink my CSS structuring, this is a mess.
+
+On September 2nd it official released at [thegreengrocerbymef.com](https://thegreengrocerbymef.com) which is awesome!
+For release, I compressed all the images and videos, applied lazy loading and finally cleaned up the CSS so I can make changes
+easier in future.
