@@ -53,7 +53,7 @@
     }
 
     .blog {
-        background-image: url("../home/images/blog-background.png");
+        background-image: url("../home/images/blog-background.webp");
     }
 
     .events {
@@ -61,15 +61,15 @@
     }
 
     .instagram {
-        background-image: url("../events/images/instagram-background.png");
+        background-image: url("../events/images/instagram-background.webp");
     }
 
     .tiktok {
-        background-image: url("../events/images/tiktok-background.png");
+        background-image: url("../events/images/tiktok-background.webp");
     }
 
     .exotic-fruits-button-bg {
-        background-image: url("images/exotic-fruits-background.jpg");
+        background-image: url("images/exotic-fruits-background.webp");
     }
 
     .japanese-fruits-button-bg {
