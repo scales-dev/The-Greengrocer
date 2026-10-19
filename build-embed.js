@@ -1,6 +1,8 @@
 // A short script that converts each page into an embeddable page
 // It makes the page ignore external styling
 // however it requires the images/css to be hosted somewhere
+// divs that can be altered by js should be tagged with !WIDGET! in a comment above
+// and js that alters stuff, should be after the </html> tag! <3
 // todo: just embed css, no point redirecting it
 
 // commonjs imports:
@@ -15,7 +17,6 @@ import path from "node:path";
 
 const BASE_URL = "https://thegreengrocerbymef.com/";
 const SRC_DIR = "src";
-
 
 const shadowScript =
   `<script>
@@ -156,8 +157,6 @@ function addScripts(content) {
     /<!--\s*!WIDGET!\s*-->\s*<[^>]*class\s*=\s*"([^"\s]*)[^"]*"/g
   )].map(match => match[1]);
 
-  console.log(widgets)
-
-  return content.split("</body>")[1].split("</html>")[0]
+  return content.split("</html>")[1]
     + shadowScript.replace("$widgets^", JSON.stringify(widgets));
 }
