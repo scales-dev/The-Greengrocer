@@ -1,0 +1,14 @@
+{
+  "name": "the-greengrocer-by-my-exotic-fruit",
+  "description": "",
+  
+  "main": "worker.js",
+  "type": "module",
+  "author": "Jack Scales",
+  "license": "ISC",
+  "version": "1.0.0",
+
+  "dependencies": {
+    "resend": "^6.24.0"
+  }
+}
