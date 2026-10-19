@@ -1,8 +1,7 @@
-// For EKM pages its easiest to be able to copy paste in a full single html file which has no other dependencies.
-// so this script make all the links link to our cloudflare site which hosts the style sheets/images
-// because I thought this was easier and cleaner than embedding the images/css into the file.
-
-// todo: handle css/js
+// A short script that converts each page into an embeddable page
+// It makes the page ignore external styling
+// however it requires the images/css to be hosted somewhere
+// todo: just embed css, no point redirecting it
 
 // commonjs imports:
 /*
