@@ -1,125 +1,136 @@
 @font-face {
-    font-family: "Gill Sans";
-    src: url("../home/fonts/GillSans.otf") format("opentype");
-    font-style: normal;
-    font-display: swap;
+  font-family: "Gill Sans";
+  src: url("https://thegreengrocerbymef.com/home/fonts/GillSans.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Gill Sans Light";
-    src: url("../home/fonts/GillSansLight.otf") format("opentype");
-    font-style: normal;
-    font-display: swap;
+  font-family: "Gill Sans Light";
+  src: url("https://thegreengrocerbymef.com/home/fonts/GillSansLight.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
 }
 
-body, :host {
-    font-family: "Gill Sans Light", sans-serif;
-    font-size: max(1vw, 1.5vh);
-    margin: 0;
+body,
+:host {
+  font-family: "Gill Sans Light", sans-serif;
+  font-size: max(1vw, 1.5vh);
+  margin: 0;
 }
 
 h1 {
-    font-family: "Gill Sans Light", sans-serif;
+  font-family: "Gill Sans Light", sans-serif;
 
-    font-size: max(5vw, 5vh);
-    line-height: 0.9;
+  font-size: max(5vw, 5vh);
+  line-height: 0.9;
 
-    margin: 0;
+  margin: 0;
 }
 
-h2, button, summary, header {
-    font-family: "Gill Sans", sans-serif;
+h2,
+button,
+summary,
+header {
+  font-family: "Gill Sans", sans-serif;
 
-    text-transform: uppercase;
-    font-size: max(2vh, 1vw);
-    font-weight: normal;
+  text-transform: uppercase;
+  font-size: max(2vh, 1vw);
+  font-weight: normal;
 
-    padding: 0;
+  padding: 0;
 }
 
 h3 {
-    font-family: "Gill Sans Light", sans-serif;
+  font-family: "Gill Sans Light", sans-serif;
 
-    font-size: max(2vw, 2.5vh);
-    font-weight: 300;
-    letter-spacing: 0.2vw;
-    line-height: 1.2;
+  font-size: max(2vw, 2.5vh);
+  font-weight: 300;
+  letter-spacing: 0.2vw;
+  line-height: 1.2;
 
-    margin: 1vh 0;
+  margin: 1vh 0;
 }
 
 a {
-    transition: translate 0.3s;
-    color: inherit;
-    text-decoration: none;
+  transition: translate 0.3s;
+  color: inherit;
+  text-decoration: none;
 }
+
 button {
-    transition: translate 0.3s, filter 0.3s;
+  transition: translate 0.3s, filter 0.3s;
 }
 
 @media(min-width: 1200px) {
-    a:hover {
-        translate: 0 -0.5vh;
-    }
-    button:hover:not(.eapps-instagram-feed-posts-slider-nav, .events-arrow) {
-        translate: 0 -0.5vh;
-        filter: invert(0.1);
-    }
+  a:hover {
+    translate: 0 -0.5vh;
+  }
+
+  button:hover:not(.eapps-instagram-feed-posts-slider-nav, .events-arrow) {
+    translate: 0 -0.5vh;
+    filter: invert(0.1);
+  }
 }
 
 .clickable {
-    color: #142f07;
-    text-decoration: underline;
-    text-underline-offset: 0.3vh;
+  color: #142f07;
+  text-decoration: underline;
+  text-underline-offset: 0.3vh;
 }
+
 .clickable:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .align-left {
-    object-position: left;
+  object-position: left;
 }
 
 /* https://community.wappler.io/t/hide-scroll-bar/64874 */
 /* For modern browsers <- i didnt write this, but i love that it implies firefox is more "modern" then edge */
 html {
-    overflow: auto;
-    overflow-x: hidden;
-    scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  /* Firefox */
 
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 html::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
+  display: none;
+  /* Chrome, Safari, Edge */
 }
 
 .invert {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 iframe {
-    border: none;
+  border: none;
 }
 
 .center-div {
-    text-align: center;
+  text-align: center;
 
-    @media(max-width: 1199px) {
-        display: grid;
-    }
+  @media(max-width: 1199px) {
+    display: grid;
+  }
 }
 
 .banner-text {
-    text-align: center;
-    background-color: #142f07;
-    color: white;
-    padding: 5px 0;
+  text-align: center;
+  background-color: #142f07;
+  color: white;
+  padding: 5px 0;
 }
+
 .banner-image {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
